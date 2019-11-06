@@ -1,9 +1,9 @@
 import pandas as pd
 import sqlite3
-df = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/00476/buddymove_holidayiq.csv")
+# df = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/00476/buddymove_holidayiq.csv")
 
 conn = sqlite3.connect('buddymove_holidayiq.sqlite3')
-df.to_sql("review",con=conn)
+# df.to_sql("review",con=conn)
 
 # count how many rows you have
 
