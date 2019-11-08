@@ -130,9 +130,22 @@ interview screening questions (a form you fill when applying for a job):
 
 - In the Northwind database, what is the type of relationship between the
   `Employee` and `Territory` tables?
+  
+  Zhenya answer: It is a many to many relationship because no single employee has a mutually exclusive 
+  relationship to any single territory and vice versa. This relationship requires a Junction Table (A JOIN) 
+  in order to find the direct link between an instance of one to the other. 
+  
 - What is a situation where a document store (like MongoDB) is appropriate, and
   what is a situation where it is not appropriate?
+  
+MongoDB is approporate for document storage, where there isn't any explicit connection between group of information contained there and you are dealing with a huge amount of data. It is not appropriate for transactional data, for instance, where it is important to have strict rules around the categorization of the different groups of data that are stored. Without rules, it becomes exceptionally difficult to keep explicit track of user information, for instance.   
+  
+  
 - What is "NewSQL", and what is it trying to achieve?
+
+NewSQL is an attempt at marrying the notion of NoSQL and Postgress where there are constraints put on the data types and data is grouped explicitly, but it has the scalability and size allowance of NOSQL. It is increasingly becoming the best solution for the modern age.  
+
+
 
 ### Part 5 - Turn it in!
 Provide all the files you wrote (`demo_data.py`, `northwind.py`), as well as
